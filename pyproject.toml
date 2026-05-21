@@ -1,0 +1,25 @@
+[project]
+name = "yolo26-ethos-u55-deploy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ethos-u-vela>=5.0.0",
+    "ultralytics>=8.3.0",
+    "onnx>=1.16.0",
+    "onnxruntime>=1.18.0",
+    "onnxsim>=0.4.36",
+    "onnx2tf>=1.22.0",
+    "tensorflow>=2.16.0",
+    "opencv-python>=4.9.0",
+    "numpy>=1.26.0",
+    "flatbuffers>=24.3.25",
+    "pyserial>=3.5",
+    "paho-mqtt>=2.0.0",
+    "Pillow>=10.0.0",
+    "python-sscma",
+]
+
+[tool.uv.sources]
+python-sscma = { git = "https://github.com/Seeed-Studio/python-sscma.git" }
